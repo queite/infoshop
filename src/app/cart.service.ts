@@ -12,7 +12,7 @@ export class CartService {
   constructor() { }
 
   getCartItems() {
-    this.items = JSON.parse(localStorage.getItem('cart')  || '');
+    this.items = JSON.parse(localStorage.getItem('cart')  || '[]');
     return this.items;
   }
 
